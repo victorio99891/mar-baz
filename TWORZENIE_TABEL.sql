@@ -88,7 +88,7 @@ CREATE TABLE NAJEM_INDYWIDUALNY
     DATA_DO                date                not null,
     ID_NIERUCHOMOSC        bigint,
     WIELKOSC_RABATU        decimal(2, 2),
-    ID_RACHUNEK            bigint unique,
+    ID_RACHUNEK            bigint,
     ID_STATUS              bigint              not null default 101,
     ILE_DNI                int
 )
@@ -104,7 +104,7 @@ CREATE TABLE NAJEM_FIRMA
     DATA_DO         date                not null,
     ID_NIERUCHOMOSC bigint              not null,
     WIELKOSC_RABATU decimal(2, 2),
-    ID_FAKTURA      bigint unique,
+    ID_FAKTURA      bigint,
     ID_STATUS       bigint              not null default 101,
     ILE_DNI         int
 )
@@ -132,25 +132,26 @@ GO
 
 CREATE TABLE FAKTURA
 (
-    ID_FAKTURA             bigint primary key identity,
-    UUID                   char(255) unique not null,
-    ID_NAJEM               bigint unique,
-    CENA_NETTO_PO_RABACIE  decimal(30, 2),
-    CENA_BRUTTO_PO_RABACIE decimal(30, 2),
-    WARTOSC_RABATU_NETTO   decimal(30, 2),
-    CZY_OPLACONA           bit default 0
+    ID_FAKTURA                bigint primary key identity,
+    UUID                      char(255) unique not null,
+    ID_NAJEM                  bigint unique,
+    CENA_NETTO                decimal(30, 2),
+    CENA_BRUTTO               decimal(30, 2),
+    WARTOSC_BRUTTO_PO_RABACIE decimal(30, 2),
+    CZY_OPLACONA              bit default 0
 )
 
 GO
 
 CREATE TABLE RACHUNEK
 (
-    ID_RACHUNEK            bigint primary key identity,
-    UUID                   char(255) unique not null,
-    ID_NAJEM               bigint unique,
-    CENA_NETTO_PO_RABACIE  decimal(30, 2),
-    CENA_BRUTTO_PO_RABACIE decimal(30, 2),
-    CZY_OPLACONY           bit default 0
+    ID_RACHUNEK               bigint primary key identity,
+    UUID                      char(255) unique not null,
+    ID_NAJEM                  bigint unique,
+    CENA_NETTO                decimal(30, 2),
+    CENA_BRUTTO               decimal(30, 2),
+    WARTOSC_BRUTTO_PO_RABACIE decimal(30, 2),
+    CZY_OPLACONY              bit default 0
 )
 
 GO
@@ -177,6 +178,13 @@ ALTER TABLE NAJEM_INDYWIDUALNY
 
 GO
 
+
+GO
+
+CREATE VIEW VIEW_GET_UUID
+AS
+SELECT NEWID() uuid
+GO
 
 
 
