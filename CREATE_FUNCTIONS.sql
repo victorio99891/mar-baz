@@ -72,6 +72,7 @@ END
 
 GO
 
+-- TEST KALKULACJI CENY
 DECLARE @NETTO decimal(30, 2);
 DECLARE @BRUTTO decimal(30, 2);
 DECLARE @RABAT decimal(30, 2);
