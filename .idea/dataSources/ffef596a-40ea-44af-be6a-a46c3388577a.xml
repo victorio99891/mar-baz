@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="linux-server@local">
+  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.16">
+    <root id="1">
+      <ServerVersion>14.0.3048</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="FIT_MATE_SCRATCH">
+      <ObjectId>6</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="3" parent="1" name="LAB_2">
+      <ObjectId>8</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="4" parent="1" name="MARCIN_NIERUCHOMOSC">
+      <ObjectId>9</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+      <Fingerprint>1.37717/00000000-0000-0000-0000-000000000000@026d55cd18b2</Fingerprint>
+    </database>
+    <database id="5" parent="1" name="SIMPLE_AUTH">
+      <ObjectId>7</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="6" parent="1" name="TEST_DATABASE_1">
+      <ObjectId>5</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="7" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <Current>1</Current>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+      <Fingerprint>1.37717/00000000-0000-0000-0000-000000000000@026d55cd18b2</Fingerprint>
+    </database>
+    <database id="8" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="9" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="10" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <schema id="11" parent="4" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="12" parent="4" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="13" parent="4" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="14" parent="4" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="15" parent="4" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="16" parent="4" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="17" parent="4" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="18" parent="4" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="19" parent="4" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="20" parent="4" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="21" parent="4" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2019-11-23.22:52:42.847</IntrospectionTimestamp>
+      <Current>1</Current>
+    </schema>
+    <schema id="22" parent="4" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="23" parent="4" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <table id="24" parent="21" name="AGENT_NIERUCHOMOSCI">
+      <ObjectId>1320391773</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:44.603</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:44.780</ModifiedTimestamp>
+    </table>
+    <table id="25" parent="21" name="FAKTURA">
+      <ObjectId>1768393369</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:45.427</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.887</ModifiedTimestamp>
+    </table>
+    <table id="26" parent="21" name="KATEGORIA_NIERUCHOMOSCI">
+      <ObjectId>1448392229</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:44.843</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:44.970</ModifiedTimestamp>
+    </table>
+    <table id="27" parent="21" name="KLIENT_FIRMA">
+      <ObjectId>1192391317</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:44.443</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.640</ModifiedTimestamp>
+    </table>
+    <table id="28" parent="21" name="KLIENT_INDYWIDUALNY">
+      <ObjectId>1256391545</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:44.527</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.700</ModifiedTimestamp>
+    </table>
+    <table id="29" parent="21" name="NAJEM_FIRMA">
+      <ObjectId>1592392742</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:45.127</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.883</ModifiedTimestamp>
+    </table>
+    <table id="30" parent="21" name="NAJEM_INDYWIDUALNY">
+      <ObjectId>1512392457</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:45.050</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:52:42.603</ModifiedTimestamp>
+    </table>
+    <table id="31" parent="21" name="NAJEM_STATUS">
+      <ObjectId>1672393027</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:45.200</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.330</ModifiedTimestamp>
+    </table>
+    <table id="32" parent="21" name="NIERUCHOMOSC">
+      <ObjectId>1368391944</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:44.687</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.813</ModifiedTimestamp>
+    </table>
+    <table id="33" parent="21" name="RACHUNEK">
+      <ObjectId>1848393654</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:45.560</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.943</ModifiedTimestamp>
+    </table>
+    <view id="34" parent="21" name="VIEW_GET_UUID">
+      <ObjectId>2024394281</ObjectId>
+      <SourceTextLength>48</SourceTextLength>
+      <CreatedTimestamp>2019-11-23.22:39:48.810</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:48.810</ModifiedTimestamp>
+    </view>
+    <routine id="35" parent="21" name="FN_OBLICZ_RABAT">
+      <ObjectId>2056394395</ObjectId>
+      <SourceTextLength>510</SourceTextLength>
+      <CreatedTimestamp>2019-11-23.22:39:48.950</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:48.950</ModifiedTimestamp>
+      <RoutineKind>function</RoutineKind>
+      <RoutineType>scalar-fun</RoutineType>
+    </routine>
+    <routine id="36" parent="21" name="getUUID">
+      <ObjectId>2040394338</ObjectId>
+      <SourceTextLength>182</SourceTextLength>
+      <CreatedTimestamp>2019-11-23.22:39:48.880</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:48.880</ModifiedTimestamp>
+      <RoutineKind>function</RoutineKind>
+      <RoutineType>scalar-fun</RoutineType>
+    </routine>
+    <column id="37" parent="24" name="ID_AGENT">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="24" name="UUID">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="39" parent="24" name="IMIE">
+      <Position>3</Position>
+      <DataType>varchar(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="24" name="NAZWISKO">
+      <Position>4</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="41" parent="24" name="PK__AGENT_NI__2F3CEBD5069EBCA3">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_AGENT</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="42" parent="24" name="UQ__AGENT_NI__65A475E674DEE893">
+      <Position>2</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UUID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="43" parent="24" name="PK__AGENT_NI__2F3CEBD5069EBCA3">
+      <ObjectId>1336391830</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:44.607</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:44.607</ModifiedTimestamp>
+      <ColNames>ID_AGENT</ColNames>
+      <UnderlyingIndexName>PK__AGENT_NI__2F3CEBD5069EBCA3</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="44" parent="24" name="UQ__AGENT_NI__65A475E674DEE893">
+      <ObjectId>1352391887</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:44.607</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:44.607</ModifiedTimestamp>
+      <ColNames>UUID</ColNames>
+      <UnderlyingIndexName>UQ__AGENT_NI__65A475E674DEE893</UnderlyingIndexName>
+    </key>
+    <column id="45" parent="25" name="ID_FAKTURA">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="25" name="UUID">
+      <Position>2</Position>
+      <DataType>char(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="25" name="ID_NAJEM">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+    </column>
+    <column id="48" parent="25" name="CENA_NETTO_PO_RABACIE">
+      <Position>4</Position>
+      <DataType>decimal(30,2)|0s</DataType>
+    </column>
+    <column id="49" parent="25" name="CENA_BRUTTO_PO_RABACIE">
+      <Position>5</Position>
+      <DataType>decimal(30,2)|0s</DataType>
+    </column>
+    <column id="50" parent="25" name="WARTOSC_RABATU_NETTO">
+      <Position>6</Position>
+      <DataType>decimal(30,2)|0s</DataType>
+    </column>
+    <column id="51" parent="25" name="CZY_OPLACONA">
+      <Position>7</Position>
+      <DefaultConstraintName>DF__FAKTURA__CZY_OPL__6D381B7D</DefaultConstraintName>
+      <DefaultExpression>0</DefaultExpression>
+      <DataType>bit|0s</DataType>
+    </column>
+    <index id="52" parent="25" name="PK__FAKTURA__8A75116A78BDB4FE">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_FAKTURA</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="53" parent="25" name="UQ__FAKTURA__D6166594C79408E4">
+      <Position>2</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_NAJEM</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="54" parent="25" name="UQ__FAKTURA__65A475E61581376A">
+      <Position>3</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UUID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="55" parent="25" name="PK__FAKTURA__8A75116A78BDB4FE">
+      <ObjectId>1784393426</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:45.480</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.480</ModifiedTimestamp>
+      <ColNames>ID_FAKTURA</ColNames>
+      <UnderlyingIndexName>PK__FAKTURA__8A75116A78BDB4FE</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="56" parent="25" name="UQ__FAKTURA__65A475E61581376A">
+      <ObjectId>1816393540</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:45.483</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.483</ModifiedTimestamp>
+      <ColNames>UUID</ColNames>
+      <UnderlyingIndexName>UQ__FAKTURA__65A475E61581376A</UnderlyingIndexName>
+    </key>
+    <key id="57" parent="25" name="UQ__FAKTURA__D6166594C79408E4">
+      <ObjectId>1800393483</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:45.480</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.480</ModifiedTimestamp>
+      <ColNames>ID_NAJEM</ColNames>
+      <UnderlyingIndexName>UQ__FAKTURA__D6166594C79408E4</UnderlyingIndexName>
+    </key>
+    <default id="58" parent="25" name="DF__FAKTURA__CZY_OPL__6D381B7D">
+      <ObjectId>1832393597</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2019-11-23.22:39:45.483</ModifiedTimestamp>
+      <ColNames>CZY_OPLACONA</ColNames>
+      <DefaultExpression>0</DefaultExpression>
+    </default>
+    <column id="59" parent="26" name="ID_KATEGORIA">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="60" parent="26" name="UUID">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="26" name="NAZWA">
+      <Position>3</Position>
+      <DataType>varchar(30 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="62" parent="26" name="PK__KATEGORI__87C22290FD291492">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_KATEGORIA</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="63" parent="26" name="UQ__KATEGORI__65A475E6935EAC88">
+      <Position>2</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UUID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="64" parent="26" name="PK__KATEGORI__87C22290FD291492">
+      <ObjectId>1464392286</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:44.900</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:44.900</ModifiedTimestamp>
+      <ColNames>ID_KATEGORIA</ColNames>
+      <UnderlyingIndexName>PK__KATEGORI__87C22290FD291492</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="65" parent="26" name="UQ__KATEGORI__65A475E6935EAC88">
+      <ObjectId>1480392343</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:44.900</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:44.900</ModifiedTimestamp>
+      <ColNames>UUID</ColNames>
+      <UnderlyingIndexName>UQ__KATEGORI__65A475E6935EAC88</UnderlyingIndexName>
+    </key>
+    <column id="66" parent="27" name="ID_KLIENT_FIRMA">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="67" parent="27" name="UUID">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="27" name="NAZWA">
+      <Position>3</Position>
+      <DataType>varchar(60 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="69" parent="27" name="NIP">
+      <Position>4</Position>
+      <DataType>varchar(10 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="70" parent="27" name="ADRES_ULICA_LOKAL">
+      <Position>5</Position>
+      <DataType>varchar(100 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="71" parent="27" name="KOD_POCZTOWY">
+      <Position>6</Position>
+      <DataType>varchar(6 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="72" parent="27" name="MIESCOWOSC">
+      <Position>7</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="73" parent="27" name="PK__KLIENT_F__000A661E2681B7E8">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_KLIENT_FIRMA</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="74" parent="27" name="UQ__KLIENT_F__C7DEC3C63FA03E0F">
+      <Position>2</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>NIP</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="75" parent="27" name="UQ__KLIENT_F__65A475E6F1A1594A">
+      <Position>3</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UUID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="76" parent="27" name="PK__KLIENT_F__000A661E2681B7E8">
+      <ObjectId>1208391374</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:44.447</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:44.447</ModifiedTimestamp>
+      <ColNames>ID_KLIENT_FIRMA</ColNames>
+      <UnderlyingIndexName>PK__KLIENT_F__000A661E2681B7E8</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="77" parent="27" name="UQ__KLIENT_F__65A475E6F1A1594A">
+      <ObjectId>1240391488</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:44.450</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:44.450</ModifiedTimestamp>
+      <ColNames>UUID</ColNames>
+      <UnderlyingIndexName>UQ__KLIENT_F__65A475E6F1A1594A</UnderlyingIndexName>
+    </key>
+    <key id="78" parent="27" name="UQ__KLIENT_F__C7DEC3C63FA03E0F">
+      <ObjectId>1224391431</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:44.447</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:44.447</ModifiedTimestamp>
+      <ColNames>NIP</ColNames>
+      <UnderlyingIndexName>UQ__KLIENT_F__C7DEC3C63FA03E0F</UnderlyingIndexName>
+    </key>
+    <column id="79" parent="28" name="ID_KLIENT">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="80" parent="28" name="UUID">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="81" parent="28" name="IMIE">
+      <Position>3</Position>
+      <DataType>varchar(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="82" parent="28" name="NAZWISKO">
+      <Position>4</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="83" parent="28" name="PESEL">
+      <Position>5</Position>
+      <DataType>varchar(11 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="84" parent="28" name="ADRES_ULICA_LOKAL">
+      <Position>6</Position>
+      <DataType>varchar(100 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="85" parent="28" name="KOD_POCZTOWY">
+      <Position>7</Position>
+      <DataType>varchar(6 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="86" parent="28" name="MIESCOWOSC">
+      <Position>8</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="87" parent="28" name="PK__KLIENT_I__97F7E5C5FF345DFD">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_KLIENT</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="88" parent="28" name="UQ__KLIENT_I__4F16EE7FDFCFC382">
+      <Position>2</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>PESEL</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="89" parent="28" name="UQ__KLIENT_I__65A475E6B9B342BA">
+      <Position>3</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UUID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="90" parent="28" name="PK__KLIENT_I__97F7E5C5FF345DFD">
+      <ObjectId>1272391602</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:44.530</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:44.530</ModifiedTimestamp>
+      <ColNames>ID_KLIENT</ColNames>
+      <UnderlyingIndexName>PK__KLIENT_I__97F7E5C5FF345DFD</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="91" parent="28" name="UQ__KLIENT_I__65A475E6B9B342BA">
+      <ObjectId>1304391716</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:44.533</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:44.533</ModifiedTimestamp>
+      <ColNames>UUID</ColNames>
+      <UnderlyingIndexName>UQ__KLIENT_I__65A475E6B9B342BA</UnderlyingIndexName>
+    </key>
+    <key id="92" parent="28" name="UQ__KLIENT_I__4F16EE7FDFCFC382">
+      <ObjectId>1288391659</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:44.533</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:44.533</ModifiedTimestamp>
+      <ColNames>PESEL</ColNames>
+      <UnderlyingIndexName>UQ__KLIENT_I__4F16EE7FDFCFC382</UnderlyingIndexName>
+    </key>
+    <column id="93" parent="29" name="ID_NAJEM">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="94" parent="29" name="UUID">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="95" parent="29" name="ID_KLIENT_FIRMA">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="96" parent="29" name="DATA_OD">
+      <Position>4</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="97" parent="29" name="DATA_DO">
+      <Position>5</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="98" parent="29" name="ID_NIERUCHOMOSC">
+      <Position>6</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="99" parent="29" name="WIELKOSC_RABATU">
+      <Position>7</Position>
+      <DataType>decimal(2,2)|0s</DataType>
+    </column>
+    <column id="100" parent="29" name="ID_FAKTURA">
+      <Position>8</Position>
+      <DataType>bigint|0s</DataType>
+    </column>
+    <column id="101" parent="29" name="ID_STATUS">
+      <Position>9</Position>
+      <DefaultConstraintName>DF__NAJEM_FIR__ID_ST__62BA8D0A</DefaultConstraintName>
+      <DefaultExpression>101</DefaultExpression>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="102" parent="29" name="ILE_DNI">
+      <Position>10</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="103" parent="29" name="PK__NAJEM_FI__D61665954A4E5254">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_NAJEM</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="104" parent="29" name="UQ__NAJEM_FI__8A75116B885F1AF3">
+      <Position>2</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_FAKTURA</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="105" parent="29" name="UQ__NAJEM_FI__65A475E66FB96B8A">
+      <Position>3</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UUID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="106" parent="29" name="PK__NAJEM_FI__D61665954A4E5254">
+      <ObjectId>1608392799</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:45.130</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.130</ModifiedTimestamp>
+      <ColNames>ID_NAJEM</ColNames>
+      <UnderlyingIndexName>PK__NAJEM_FI__D61665954A4E5254</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="107" parent="29" name="UQ__NAJEM_FI__65A475E66FB96B8A">
+      <ObjectId>1640392913</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:45.133</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.133</ModifiedTimestamp>
+      <ColNames>UUID</ColNames>
+      <UnderlyingIndexName>UQ__NAJEM_FI__65A475E66FB96B8A</UnderlyingIndexName>
+    </key>
+    <key id="108" parent="29" name="UQ__NAJEM_FI__8A75116B885F1AF3">
+      <ObjectId>1624392856</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:45.130</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.130</ModifiedTimestamp>
+      <ColNames>ID_FAKTURA</ColNames>
+      <UnderlyingIndexName>UQ__NAJEM_FI__8A75116B885F1AF3</UnderlyingIndexName>
+    </key>
+    <foreign-key id="109" parent="29" name="FK_NAJEM_KLIENT_FIRMA_ID">
+      <ObjectId>1928393939</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:45.640</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.640</ModifiedTimestamp>
+      <ColNames>ID_KLIENT_FIRMA</ColNames>
+      <RefTableId>1192391317</RefTableId>
+      <RefTableName>KLIENT_FIRMA</RefTableName>
+      <RefKeyName>PK__KLIENT_F__000A661E2681B7E8</RefKeyName>
+      <RefColNames>ID_KLIENT_FIRMA</RefColNames>
+    </foreign-key>
+    <foreign-key id="110" parent="29" name="FK_NAJEM_FIRM_NIERUCHOMOSC_ID">
+      <ObjectId>1960394053</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:45.757</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.757</ModifiedTimestamp>
+      <ColNames>ID_NIERUCHOMOSC</ColNames>
+      <RefTableId>1368391944</RefTableId>
+      <RefTableName>NIERUCHOMOSC</RefTableName>
+      <RefKeyName>PK__NIERUCHO__5D3C9FAC7668C235</RefKeyName>
+      <RefColNames>ID_NIERUCHOMOSC</RefColNames>
+    </foreign-key>
+    <foreign-key id="111" parent="29" name="FK_NAJEM_FIRMA_FAKTURA">
+      <ObjectId>1992394167</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:45.883</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.883</ModifiedTimestamp>
+      <ColNames>ID_FAKTURA</ColNames>
+      <RefTableId>1768393369</RefTableId>
+      <RefTableName>FAKTURA</RefTableName>
+      <RefKeyName>PK__FAKTURA__8A75116A78BDB4FE</RefKeyName>
+      <RefColNames>ID_FAKTURA</RefColNames>
+    </foreign-key>
+    <foreign-key id="112" parent="29" name="FK_NAJEM_FIRMA_STATUS_ID">
+      <ObjectId>1752393312</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:45.330</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.330</ModifiedTimestamp>
+      <ColNames>ID_STATUS</ColNames>
+      <RefTableId>1672393027</RefTableId>
+      <RefTableName>NAJEM_STATUS</RefTableName>
+      <RefKeyName>PK__NAJEM_ST__C55A17648D03A7E7</RefKeyName>
+      <RefColNames>ID_STATUS</RefColNames>
+    </foreign-key>
+    <default id="113" parent="29" name="DF__NAJEM_FIR__ID_ST__62BA8D0A">
+      <ObjectId>1656392970</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2019-11-23.22:39:45.133</ModifiedTimestamp>
+      <ColNames>ID_STATUS</ColNames>
+      <DefaultExpression>101</DefaultExpression>
+    </default>
+    <column id="114" parent="30" name="ID_NAJEM">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="115" parent="30" name="UUID">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="116" parent="30" name="ID_KLIENT_INDYWIDUALNY">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="117" parent="30" name="DATA_OD">
+      <Position>4</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="118" parent="30" name="DATA_DO">
+      <Position>5</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="119" parent="30" name="ID_NIERUCHOMOSC">
+      <Position>6</Position>
+      <DataType>bigint|0s</DataType>
+    </column>
+    <column id="120" parent="30" name="WIELKOSC_RABATU">
+      <Position>7</Position>
+      <DataType>decimal(2,2)|0s</DataType>
+    </column>
+    <column id="121" parent="30" name="ID_RACHUNEK">
+      <Position>8</Position>
+      <DataType>bigint|0s</DataType>
+    </column>
+    <column id="122" parent="30" name="ID_STATUS">
+      <Position>9</Position>
+      <DefaultConstraintName>DF__NAJEM_IND__ID_ST__5DF5D7ED</DefaultConstraintName>
+      <DefaultExpression>101</DefaultExpression>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="123" parent="30" name="ILE_DNI">
+      <Position>10</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="124" parent="30" name="PK__NAJEM_IN__D6166595A1BF1188">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_NAJEM</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="125" parent="30" name="UQ__NAJEM_IN__0AA66BE13E7306FE">
+      <Position>2</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_RACHUNEK</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="126" parent="30" name="UQ__NAJEM_IN__65A475E655870A46">
+      <Position>3</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UUID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="127" parent="30" name="PK__NAJEM_IN__D6166595A1BF1188">
+      <ObjectId>1528392514</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:45.053</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.053</ModifiedTimestamp>
+      <ColNames>ID_NAJEM</ColNames>
+      <UnderlyingIndexName>PK__NAJEM_IN__D6166595A1BF1188</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="128" parent="30" name="UQ__NAJEM_IN__65A475E655870A46">
+      <ObjectId>1560392628</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:45.060</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.060</ModifiedTimestamp>
+      <ColNames>UUID</ColNames>
+      <UnderlyingIndexName>UQ__NAJEM_IN__65A475E655870A46</UnderlyingIndexName>
+    </key>
+    <key id="129" parent="30" name="UQ__NAJEM_IN__0AA66BE13E7306FE">
+      <ObjectId>1544392571</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:45.057</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.057</ModifiedTimestamp>
+      <ColNames>ID_RACHUNEK</ColNames>
+      <UnderlyingIndexName>UQ__NAJEM_IN__0AA66BE13E7306FE</UnderlyingIndexName>
+    </key>
+    <foreign-key id="130" parent="30" name="FK_NAJEM_KLIENT_IND_ID">
+      <ObjectId>1944393996</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:45.700</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.700</ModifiedTimestamp>
+      <ColNames>ID_KLIENT_INDYWIDUALNY</ColNames>
+      <RefTableId>1256391545</RefTableId>
+      <RefTableName>KLIENT_INDYWIDUALNY</RefTableName>
+      <RefKeyName>PK__KLIENT_I__97F7E5C5FF345DFD</RefKeyName>
+      <RefColNames>ID_KLIENT</RefColNames>
+    </foreign-key>
+    <foreign-key id="131" parent="30" name="FK_NAJEM_IND_NIERUCHOMOSC_ID">
+      <ObjectId>1976394110</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:45.813</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.813</ModifiedTimestamp>
+      <ColNames>ID_NIERUCHOMOSC</ColNames>
+      <RefTableId>1368391944</RefTableId>
+      <RefTableName>NIERUCHOMOSC</RefTableName>
+      <RefKeyName>PK__NIERUCHO__5D3C9FAC7668C235</RefKeyName>
+      <RefColNames>ID_NIERUCHOMOSC</RefColNames>
+    </foreign-key>
+    <foreign-key id="132" parent="30" name="FK_NAJEM_IND_RACHUNEK">
+      <ObjectId>2008394224</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:45.943</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.943</ModifiedTimestamp>
+      <ColNames>ID_RACHUNEK</ColNames>
+      <RefTableId>1848393654</RefTableId>
+      <RefTableName>RACHUNEK</RefTableName>
+      <RefKeyName>PK__RACHUNEK__0AA66BE03587C3D0</RefKeyName>
+      <RefColNames>ID_RACHUNEK</RefColNames>
+    </foreign-key>
+    <foreign-key id="133" parent="30" name="FK_NAJEM_IND_STATUS_ID">
+      <ObjectId>1736393255</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:45.280</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.280</ModifiedTimestamp>
+      <ColNames>ID_STATUS</ColNames>
+      <RefTableId>1672393027</RefTableId>
+      <RefTableName>NAJEM_STATUS</RefTableName>
+      <RefKeyName>PK__NAJEM_ST__C55A17648D03A7E7</RefKeyName>
+      <RefColNames>ID_STATUS</RefColNames>
+    </foreign-key>
+    <default id="134" parent="30" name="DF__NAJEM_IND__ID_ST__5DF5D7ED">
+      <ObjectId>1576392685</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2019-11-23.22:39:45.060</ModifiedTimestamp>
+      <ColNames>ID_STATUS</ColNames>
+      <DefaultExpression>101</DefaultExpression>
+    </default>
+    <trigger id="135" parent="30" name="TR_SPRAWDZ_POPRAWNOSC_DATY_ORAZ_DOSTEPNOSC_WYNAJECIA">
+      <ObjectId>2120394623</ObjectId>
+      <SourceTextLength>1847</SourceTextLength>
+      <CreatedTimestamp>2019-11-23.22:52:42.603</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:52:42.603</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>instead-of</Turn>
+    </trigger>
+    <column id="136" parent="31" name="ID_STATUS">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="137" parent="31" name="UUID">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="138" parent="31" name="NAZWA">
+      <Position>3</Position>
+      <DataType>varchar(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="139" parent="31" name="PK__NAJEM_ST__C55A17648D03A7E7">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_STATUS</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="140" parent="31" name="UQ__NAJEM_ST__A36D30A66CBDAF37">
+      <Position>2</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>NAZWA</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="141" parent="31" name="UQ__NAJEM_ST__65A475E630234F11">
+      <Position>3</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UUID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="142" parent="31" name="PK__NAJEM_ST__C55A17648D03A7E7">
+      <ObjectId>1688393084</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:45.203</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.203</ModifiedTimestamp>
+      <ColNames>ID_STATUS</ColNames>
+      <UnderlyingIndexName>PK__NAJEM_ST__C55A17648D03A7E7</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="143" parent="31" name="UQ__NAJEM_ST__65A475E630234F11">
+      <ObjectId>1720393198</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:45.210</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.210</ModifiedTimestamp>
+      <ColNames>UUID</ColNames>
+      <UnderlyingIndexName>UQ__NAJEM_ST__65A475E630234F11</UnderlyingIndexName>
+    </key>
+    <key id="144" parent="31" name="UQ__NAJEM_ST__A36D30A66CBDAF37">
+      <ObjectId>1704393141</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:45.207</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.207</ModifiedTimestamp>
+      <ColNames>NAZWA</ColNames>
+      <UnderlyingIndexName>UQ__NAJEM_ST__A36D30A66CBDAF37</UnderlyingIndexName>
+    </key>
+    <column id="145" parent="32" name="ID_NIERUCHOMOSC">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="146" parent="32" name="UUID">
+      <Position>2</Position>
+      <DataType>varchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="147" parent="32" name="ID_AGENT">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="148" parent="32" name="NAZWA">
+      <Position>4</Position>
+      <DataType>varchar(100 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="149" parent="32" name="RODZAJ">
+      <Position>5</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="150" parent="32" name="ADRES_ULICA_LOKAL">
+      <Position>6</Position>
+      <DataType>varchar(100 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="151" parent="32" name="KOD_POCZTOWY">
+      <Position>7</Position>
+      <DataType>varchar(6 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="152" parent="32" name="MIESCOWOSC">
+      <Position>8</Position>
+      <DataType>varchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="153" parent="32" name="CENA_DOBA_NETTO">
+      <Position>9</Position>
+      <DataType>decimal(10,2)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="154" parent="32" name="METRAZ">
+      <Position>10</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="155" parent="32" name="DOSTEPNA">
+      <Position>11</Position>
+      <DefaultConstraintName>DF__NIERUCHOM__DOSTE__546C6DB3</DefaultConstraintName>
+      <DefaultExpression>1</DefaultExpression>
+      <DataType>bit|0s</DataType>
+    </column>
+    <index id="156" parent="32" name="PK__NIERUCHO__5D3C9FAC7668C235">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_NIERUCHOMOSC</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="157" parent="32" name="UQ__NIERUCHO__65A475E63926C68B">
+      <Position>2</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UUID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="158" parent="32" name="PK__NIERUCHO__5D3C9FAC7668C235">
+      <ObjectId>1384392001</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:44.690</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:44.690</ModifiedTimestamp>
+      <ColNames>ID_NIERUCHOMOSC</ColNames>
+      <UnderlyingIndexName>PK__NIERUCHO__5D3C9FAC7668C235</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="159" parent="32" name="UQ__NIERUCHO__65A475E63926C68B">
+      <ObjectId>1400392058</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:44.693</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:44.693</ModifiedTimestamp>
+      <ColNames>UUID</ColNames>
+      <UnderlyingIndexName>UQ__NIERUCHO__65A475E63926C68B</UnderlyingIndexName>
+    </key>
+    <foreign-key id="160" parent="32" name="FK_NIERUCHOMOSC_AGENT_ID">
+      <ObjectId>1432392172</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:44.780</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:44.780</ModifiedTimestamp>
+      <ColNames>ID_AGENT</ColNames>
+      <RefTableId>1320391773</RefTableId>
+      <RefTableName>AGENT_NIERUCHOMOSCI</RefTableName>
+      <RefKeyName>PK__AGENT_NI__2F3CEBD5069EBCA3</RefKeyName>
+      <RefColNames>ID_AGENT</RefColNames>
+    </foreign-key>
+    <foreign-key id="161" parent="32" name="FK_NIERUCHOMOSC_RODZAJ">
+      <ObjectId>1496392400</ObjectId>
+      <CreatedTimestamp>2019-11-23.22:39:44.970</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:44.970</ModifiedTimestamp>
+      <ColNames>RODZAJ</ColNames>
+      <RefTableId>1448392229</RefTableId>
+      <RefTableName>KATEGORIA_NIERUCHOMOSCI</RefTableName>
+      <RefKeyName>PK__KATEGORI__87C22290FD291492</RefKeyName>
+      <RefColNames>ID_KATEGORIA</RefColNames>
+    </foreign-key>
+    <default id="162" parent="32" name="DF__NIERUCHOM__DOSTE__546C6DB3">
+      <ObjectId>1416392115</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2019-11-23.22:39:44.693</ModifiedTimestamp>
+      <ColNames>DOSTEPNA</ColNames>
+      <DefaultExpression>1</DefaultExpression>
+    </default>
+    <column id="163" parent="33" name="ID_RACHUNEK">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="164" parent="33" name="UUID">
+      <Position>2</Position>
+      <DataType>char(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="165" parent="33" name="ID_NAJEM">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+    </column>
+    <column id="166" parent="33" name="CENA_NETTO_PO_RABACIE">
+      <Position>4</Position>
+      <DataType>decimal(30,2)|0s</DataType>
+    </column>
+    <column id="167" parent="33" name="CENA_BRUTTO_PO_RABACIE">
+      <Position>5</Position>
+      <DataType>decimal(30,2)|0s</DataType>
+    </column>
+    <column id="168" parent="33" name="CZY_OPLACONY">
+      <Position>6</Position>
+      <DefaultConstraintName>DF__RACHUNEK__CZY_OP__71FCD09A</DefaultConstraintName>
+      <DefaultExpression>0</DefaultExpression>
+      <DataType>bit|0s</DataType>
+    </column>
+    <index id="169" parent="33" name="PK__RACHUNEK__0AA66BE03587C3D0">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_RACHUNEK</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="170" parent="33" name="UQ__RACHUNEK__D6166594AF47228B">
+      <Position>2</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_NAJEM</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="171" parent="33" name="UQ__RACHUNEK__65A475E6FEC3BDF6">
+      <Position>3</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UUID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="172" parent="33" name="PK__RACHUNEK__0AA66BE03587C3D0">
+      <ObjectId>1864393711</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:45.563</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.563</ModifiedTimestamp>
+      <ColNames>ID_RACHUNEK</ColNames>
+      <UnderlyingIndexName>PK__RACHUNEK__0AA66BE03587C3D0</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="173" parent="33" name="UQ__RACHUNEK__65A475E6FEC3BDF6">
+      <ObjectId>1896393825</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:45.567</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.567</ModifiedTimestamp>
+      <ColNames>UUID</ColNames>
+      <UnderlyingIndexName>UQ__RACHUNEK__65A475E6FEC3BDF6</UnderlyingIndexName>
+    </key>
+    <key id="174" parent="33" name="UQ__RACHUNEK__D6166594AF47228B">
+      <ObjectId>1880393768</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-11-23.22:39:45.567</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-23.22:39:45.567</ModifiedTimestamp>
+      <ColNames>ID_NAJEM</ColNames>
+      <UnderlyingIndexName>UQ__RACHUNEK__D6166594AF47228B</UnderlyingIndexName>
+    </key>
+    <default id="175" parent="33" name="DF__RACHUNEK__CZY_OP__71FCD09A">
+      <ObjectId>1912393882</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2019-11-23.22:39:45.567</ModifiedTimestamp>
+      <ColNames>CZY_OPLACONY</ColNames>
+      <DefaultExpression>0</DefaultExpression>
+    </default>
+    <column id="176" parent="34" name="uuid">
+      <Position>1</Position>
+      <DataType>uniqueidentifier|0s</DataType>
+    </column>
+    <argument id="177" parent="35">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>decimal(2,2)|0s</DataType>
+    </argument>
+    <argument id="178" parent="35" name="@FROM">
+      <Position>1</Position>
+      <DataType>date|0s</DataType>
+    </argument>
+    <argument id="179" parent="35" name="@TO">
+      <Position>2</Position>
+      <DataType>date|0s</DataType>
+    </argument>
+    <argument id="180" parent="36">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>varchar(255 char)|0s</DataType>
+    </argument>
+  </database-model>
+</dataSource>

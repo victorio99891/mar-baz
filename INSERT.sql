@@ -1,75 +1,37 @@
 USE MARCIN_NIERUCHOMOSC;
 
+GO
+
 INSERT INTO KLIENT_INDYWIDUALNY (UUID, IMIE, NAZWISKO, PESEL, ADRES_ULICA_LOKAL, KOD_POCZTOWY, MIESCOWOSC)
-VALUES (dbo.getUUID(), 'Andrzej', 'Kowalski', '92011287321', 'Madalińskiego 9/12', '01123',
+VALUES (dbo.getUUID(), 'Andrzej', 'Kowalski', '92011287321', 'Madalińskiego 9/12', '01-123',
         'Warszawa'),
-       (dbo.getUUID(), 'Anna', 'Siemaszko', '95052199021', 'Czerwonego Kapturka 15b', '01454',
+       (dbo.getUUID(), 'Anna', 'Siemaszko', '95052199021', 'Czerwonego Kapturka 15b', '01-454',
         'Łomianki');
 
+INSERT INTO KLIENT_FIRMA (UUID, NAZWA, NIP, ADRES_ULICA_LOKAL, KOD_POCZTOWY, MIESCOWOSC)
+VALUES (dbo.getUUID(), 'SoftWare Inc.', '1234567890', 'Wiktoriańska 15 lok 100', '04-178',
+        'Warszawa'),
+       (dbo.getUUID(), 'MEBLOPOL SPÓŁKA JAWNA', '0987654321', 'Niedołajdy 21 p. 2', '51-754',
+        'Kraków');
+
+GO
 
 INSERT INTO AGENT_NIERUCHOMOSCI (UUID, IMIE, NAZWISKO)
-VALUES (dbo.getUUID(), 'Bożydar', 'Sięmięczko');
-
-INSERT INTO KATEGORIA_NIERUCHOMOSCI (UUID, NAZWA)
-VALUES (dbo.getUUID(), 'POWIERZCHNIA_BIUROWA');
-
-INSERT INTO NIERUCHOMOSC (UUID, NAZWA, RODZAJ, ADRES_ULICA_LOKAL, KOD_POCZTOWY, MIESCOWOSC, CENA_DOBA_NETTO,
-                          CENA_DOBA_BRUTTO, METRAZ)
-VALUES (dbo.getUUID(), 'Q22 - Piętro 28', 1, 'Aleja Jana Pawła 22', '01146', 'Warszawa', 249.99, null, 120);
+VALUES (dbo.getUUID(), 'Bożydar', 'Sięmięczko'),
+       (dbo.getUUID(), 'Krystyna', 'Kowlaska'),
+       (dbo.getUUID(), 'Anna', 'Wolska'),
+       (dbo.getUUID(), 'Karol', 'Woźniak');
 
 GO
 
-CREATE TRIGGER TR_CHECK_DATES
-    ON NAJEM
-    INSTEAD OF INSERT
-    AS
-BEGIN
-    DECLARE @FROM date;
-    DECLARE @TO date;
-    DECLARE @NIERUCH bigint;
-    SELECT @FROM = inserted.DATA_OD, @TO = inserted.DATA_DO, @NIERUCH = inserted.ID_NIERUCHOMOSC FROM inserted;
-    IF (@TO < @FROM)
-        BEGIN
-            RAISERROR ('Wrong dates!',17,1);
-        END
-    ELSE
-        IF EXISTS(SELECT *
-                  FROM NAJEM
-                  WHERE NAJEM.ID_NIERUCHOMOSC = @NIERUCH
-                    AND NAJEM.DATA_OD >= @FROM
-                    AND NAJEM.DATA_DO <= @TO)
-            BEGIN
-                RAISERROR ('This property is currently booked!',17,1);
-            END
-        ELSE
-            BEGIN
-                INSERT INTO NAJEM (UUID, ID_AGENT, DATA_OD, DATA_DO, ID_KLIENT_INDYWIDUALNY, ID_KLIENT_FIRMA,
-                                   ID_NIERUCHOMOSC,
-                                   WIELKOSC_RABATU, ARCHIWUM)
-                SELECT inserted.UUID,
-                       inserted.ID_AGENT,
-                       inserted.DATA_OD,
-                       inserted.DATA_DO,
-                       inserted.ID_KLIENT_INDYWIDUALNY,
-                       inserted.ID_KLIENT_FIRMA,
-                       inserted.ID_NIERUCHOMOSC,
-                       inserted.WIELKOSC_RABATU,
-                       inserted.ARCHIWUM
-                FROM inserted;
-            END
-END
+INSERT INTO NIERUCHOMOSC (UUID, ID_AGENT, NAZWA, RODZAJ, ADRES_ULICA_LOKAL, KOD_POCZTOWY, MIESCOWOSC, CENA_DOBA_NETTO,
+                          METRAZ)
+VALUES (dbo.getUUID(), 1, 'Q22 - Piętro 28', 502, 'Aleja Jana Pawła 22', '01-146', 'Warszawa', 549.99, 120),
+       (dbo.getUUID(), 2, 'Cracow Spire Full Floor', 502, 'Wawelska 1', '01-146', 'Kraków', 999.99, 430),
+       (dbo.getUUID(), 3, 'Lokal - Studio', 503, 'Wolska 22', '03-146', 'Warszawa', 249.99, 90),
+       (dbo.getUUID(), 2, 'Mieszkanie 3-pokojowe', 501, 'Rudnickiego 5/12', '04-146', 'Kraków', 150.00, 90),
+       (dbo.getUUID(), 4, 'Mieszkanie 1-pokojowe', 501, 'Madalińskiego 5/133', '07-146', 'Warszawa', 99.99, 48),
+       (dbo.getUUID(), 2, 'Mieszkanie 2-pokojowe', 501, 'Chrobrego 12/1', '01-146', 'Warszawa', 120.00, 60);
 
 GO
 
-
-INSERT INTO NAJEM(UUID, ID_AGENT, DATA_OD, DATA_DO, ID_KLIENT_INDYWIDUALNY, ID_KLIENT_FIRMA, ID_NIERUCHOMOSC,
-                  WIELKOSC_RABATU, ARCHIWUM)
-VALUES (dbo.getUUID(), 1, convert(datetime, '23.10.2016', 104), convert(datetime, '23.10.2016', 104), 1, null, 1, null,
-        0);
-
-GO
-
-INSERT INTO NAJEM(UUID, ID_AGENT, DATA_OD, DATA_DO, ID_KLIENT_INDYWIDUALNY, ID_KLIENT_FIRMA, ID_NIERUCHOMOSC,
-                  WIELKOSC_RABATU, ARCHIWUM)
-VALUES (dbo.getUUID(), 1, convert(datetime, '13.10.2016', 104), convert(datetime, '22.10.2016', 104), 1, null, 1, null,
-        0);

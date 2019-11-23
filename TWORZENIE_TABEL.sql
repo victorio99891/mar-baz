@@ -13,7 +13,7 @@ CREATE TABLE KLIENT_FIRMA
     NAZWA             varchar(60)         not null,
     NIP               varchar(10) unique  not null,
     ADRES_ULICA_LOKAL varchar(100)        not null,
-    KOD_POCZTOWY      varchar(5)          not null,
+    KOD_POCZTOWY      varchar(6)          not null,
     MIESCOWOSC        varchar(50)         not null
 );
 
@@ -27,7 +27,7 @@ CREATE TABLE KLIENT_INDYWIDUALNY
     NAZWISKO          varchar(50)         not null,
     PESEL             varchar(11) unique  not null,
     ADRES_ULICA_LOKAL varchar(100)        not null,
-    KOD_POCZTOWY      varchar(5)          not null,
+    KOD_POCZTOWY      varchar(6)          not null,
     MIESCOWOSC        varchar(50)         not null,
 );
 
@@ -51,12 +51,11 @@ CREATE TABLE NIERUCHOMOSC
     NAZWA             varchar(100)        not null,
     RODZAJ            bigint              not null,
     ADRES_ULICA_LOKAL varchar(100)        not null,
-    KOD_POCZTOWY      varchar(5)          not null,
+    KOD_POCZTOWY      varchar(6)          not null,
     MIESCOWOSC        varchar(50)         not null,
     CENA_DOBA_NETTO   decimal(10, 2)      not null,
-    CENA_DOBA_BRUTTO  decimal(10, 2),
     METRAZ            int                 not null,
-    DOSTEPNA          bit default 0
+    DOSTEPNA          bit default 1
 )
 
 GO
@@ -84,13 +83,14 @@ CREATE TABLE NAJEM_INDYWIDUALNY
 (
     ID_NAJEM               bigint primary key identity,
     UUID                   varchar(255) unique not null,
-    ID_KLIENT_INDYWIDUALNY bigint default null,
+    ID_KLIENT_INDYWIDUALNY bigint              not null,
     DATA_OD                date                not null,
     DATA_DO                date                not null,
     ID_NIERUCHOMOSC        bigint,
     WIELKOSC_RABATU        decimal(2, 2),
     ID_RACHUNEK            bigint unique,
-    ID_STATUS              bigint              not null
+    ID_STATUS              bigint              not null default 101,
+    ILE_DNI                int
 )
 
 GO
@@ -105,7 +105,8 @@ CREATE TABLE NAJEM_FIRMA
     ID_NIERUCHOMOSC bigint              not null,
     WIELKOSC_RABATU decimal(2, 2),
     ID_FAKTURA      bigint unique,
-    ID_STATUS       bigint              not null
+    ID_STATUS       bigint              not null default 101,
+    ILE_DNI         int
 )
 
 GO
@@ -149,7 +150,6 @@ CREATE TABLE RACHUNEK
     ID_NAJEM               bigint unique,
     CENA_NETTO_PO_RABACIE  decimal(30, 2),
     CENA_BRUTTO_PO_RABACIE decimal(30, 2),
-    WARTOSC_RABATU_NETTO   decimal(30, 2),
     CZY_OPLACONY           bit default 0
 )
 
@@ -177,22 +177,7 @@ ALTER TABLE NAJEM_INDYWIDUALNY
 
 GO
 
-CREATE VIEW VIEW_GET_UUID
-AS
-SELECT NEWID() uuid
-GO
 
-GO
-
-CREATE FUNCTION getUUID() RETURNS varchar(255) AS
-BEGIN
-    DECLARE @UUID uniqueidentifier
-    SELECT @UUID = uuid
-    FROM VIEW_GET_UUID
-    RETURN CONVERT(varchar(255), @UUID);
-END
-
-GO
 
 
 
