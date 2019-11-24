@@ -54,8 +54,7 @@ CREATE TABLE NIERUCHOMOSC
     KOD_POCZTOWY      varchar(6)          not null,
     MIESCOWOSC        varchar(50)         not null,
     CENA_DOBA_NETTO   decimal(10, 2)      not null,
-    METRAZ            int                 not null,
-    DOSTEPNA          bit default 1
+    METRAZ            int                 not null
 )
 
 GO
