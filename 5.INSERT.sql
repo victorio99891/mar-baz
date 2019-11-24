@@ -2,6 +2,8 @@ USE MARCIN_NIERUCHOMOSC;
 
 GO
 
+-- PRZYKŁADOWE DANE
+
 INSERT INTO KLIENT_INDYWIDUALNY (UUID, IMIE, NAZWISKO, PESEL, ADRES_ULICA_LOKAL, KOD_POCZTOWY, MIESCOWOSC)
 VALUES (dbo.getUUID(), 'Andrzej', 'Kowalski', '92011287321', 'Madalińskiego 9/12', '01-123',
         'Warszawa'),
@@ -16,11 +18,11 @@ VALUES (dbo.getUUID(), 'SoftWare Inc.', '1234567890', 'Wiktoriańska 15 lok 100'
 
 GO
 
-INSERT INTO AGENT_NIERUCHOMOSCI (UUID, IMIE, NAZWISKO)
-VALUES (dbo.getUUID(), 'Bożydar', 'Sięmięczko'),
-       (dbo.getUUID(), 'Krystyna', 'Kowlaska'),
-       (dbo.getUUID(), 'Anna', 'Wolska'),
-       (dbo.getUUID(), 'Karol', 'Woźniak');
+INSERT INTO AGENT_NIERUCHOMOSCI (UUID, IMIE, NAZWISKO, NUMER_TELEFONU)
+VALUES (dbo.getUUID(), 'Bożydar', 'Sięmięczko', '730480123'),
+       (dbo.getUUID(), 'Krystyna', 'Kowlaska', '678232123'),
+       (dbo.getUUID(), 'Anna', 'Wolska', '788233444'),
+       (dbo.getUUID(), 'Karol', 'Woźniak', '876876123');
 
 GO
 

@@ -35,10 +35,11 @@ GO
 
 CREATE TABLE AGENT_NIERUCHOMOSCI
 (
-    ID_AGENT bigint primary key identity,
-    UUID     varchar(255) unique not null,
-    IMIE     varchar(20)         not null,
-    NAZWISKO varchar(50)         not null,
+    ID_AGENT       bigint primary key identity,
+    UUID           varchar(255) unique not null,
+    IMIE           varchar(20)         not null,
+    NAZWISKO       varchar(50)         not null,
+    NUMER_TELEFONU varchar(9) unique   not null
 )
 
 GO
@@ -180,6 +181,7 @@ GO
 
 GO
 
+-- WIDOK STWORZONY NA POTRZEBĘ GENEROWANIA UUID
 CREATE VIEW VIEW_GET_UUID
 AS
 SELECT NEWID() uuid
