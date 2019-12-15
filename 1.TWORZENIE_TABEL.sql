@@ -2,6 +2,8 @@
 
 -- GO
 
+---------------------------------------------   6A ----------------------------------------------
+
 USE MARCIN_NIERUCHOMOSC;
 
 GO
@@ -156,6 +158,7 @@ CREATE TABLE RACHUNEK
 
 GO
 
+-- tutaj masz tworzenie constraintów wszystkich czyli POLACZACZEN POMIEDZY TABELAMI
 ALTER TABLE NAJEM_FIRMA
     ADD CONSTRAINT FK_NAJEM_KLIENT_FIRMA_ID FOREIGN KEY (ID_KLIENT_FIRMA) REFERENCES KLIENT_FIRMA (ID_KLIENT_FIRMA);
 
@@ -177,6 +180,9 @@ ALTER TABLE NAJEM_INDYWIDUALNY
     ADD CONSTRAINT FK_NAJEM_IND_RACHUNEK FOREIGN KEY (ID_RACHUNEK) REFERENCES RACHUNEK (ID_RACHUNEK);
 
 GO
+
+
+---------------------------------------------   6A ----------------------------------------------
 
 
 GO
